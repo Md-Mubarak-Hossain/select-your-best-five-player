@@ -1,6 +1,6 @@
 // console.log('utilies.js');
 
-function createElementWithValue(elementId) {
+function createElementWithValue(elementId, btn) {
     const textField = document.getElementById(elementId);
     const textFieldString = textField.innerText;
 
@@ -9,9 +9,11 @@ function createElementWithValue(elementId) {
 
     const list = document.createElement('li');
     list.innerText = textFieldString;
+    const button = document.getElementById(btn);
     if (numb < 6) {
 
         elementCreate.appendChild(list);
+        button.disabled = true;
     }
     else {
         alert("you cant select more than 5 players");
@@ -19,20 +21,6 @@ function createElementWithValue(elementId) {
     }
 
 }
-
-function toDisabled(elementId) {
-    const button = document.getElementById(elementId);
-    const totalElement = document.getElementById('create-element');
-    let numb = totalElement.childElementCount;
-
-    if (numb < 6 && numb >= 1) {
-        button.disabled = true;
-    }
-    else {
-        button.disabled = false;
-    }
-}
-
 
 
 function toCalculat() {
