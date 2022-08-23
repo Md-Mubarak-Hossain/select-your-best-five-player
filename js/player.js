@@ -1,4 +1,13 @@
 
+
+/*
+............................................................
+............................................................
+Eventhandler uses for select player and disabled player
+............................................................
+.............................................................
+*/
+
 document.getElementById('btn-1').addEventListener('click', function () {
     createElementWithValue('text-1', 'btn-1');
 })
@@ -49,4 +58,16 @@ document.getElementById('btn-11').addEventListener('click', function () {
 
 document.getElementById('btn-12').addEventListener('click', function () {
     createElementWithValue('text-12', 'btn-12');
+})
+
+document.getElementById('btn-13').addEventListener('click', function () {
+    createElementWithValue('text-13', 'btn-13');
+})
+
+document.getElementById('btn-14').addEventListener('click', function () {
+    createElementWithValue('text-14', 'btn-14');
+})
+
+document.getElementById('btn-15').addEventListener('click', function () {
+    createElementWithValue('text-15', 'btn-15');
 })

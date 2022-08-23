@@ -18,3 +18,9 @@
 .order-list {
     list-style: none;
 }
+
+.btn-hover-color:hover {
+    background-color: red;
+    color: white;
+    text-decoration: dotted;
+}
